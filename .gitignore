@@ -2,7 +2,8 @@
 node_modules/
 
 # Build files
-dist/
+# Comentamos dist/ para incluir el CSS compilado
+# dist/
 
 # Environment files
 .env
