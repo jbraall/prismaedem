@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prisma Consulting - Multiplicamos tu visión, potenciamos tus resultados</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-6 py-1">
+            <div class="flex justify-between items-center">
+                <a href="#" class="flex items-center">
+                    <img src="./images/logo.jpeg" alt="PRISMA Consulting" class="h-16 w-auto">
+                </a>
+                
+                <!-- Menú de escritorio -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-prisma-power px-3 py-1 rounded-md hover:bg-prisma-dark hover:text-prisma-energy transition-all duration-300">Quiénes Somos</a>
+                    <a href="#team" class="text-prisma-power px-3 py-1 rounded-md hover:bg-prisma-dark hover:text-prisma-energy transition-all duration-300">Equipo</a>
+                    <a href="#services" class="text-prisma-power px-3 py-1 rounded-md hover:bg-prisma-dark hover:text-prisma-energy transition-all duration-300">Servicios</a>
+                    <a href="#success-cases" class="text-prisma-power px-3 py-1 rounded-md hover:bg-prisma-dark hover:text-prisma-energy transition-all duration-300">Casos de Éxito</a>
+                    <a href="#contact" class="text-prisma-power px-3 py-1 rounded-md hover:bg-prisma-dark hover:text-prisma-energy transition-all duration-300">Contacto</a>
+                </div>
+
+                <!-- Botón menú móvil -->
+                <button id="menu-button" class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menú móvil -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <a href="#about" class="block py-2 px-4 text-prisma-power hover:bg-prisma-dark hover:text-prisma-energy transition-all duration-300">Quiénes Somos</a>
+                <a href="#team" class="block py-2 px-4 text-prisma-power hover:bg-prisma-dark hover:text-prisma-energy transition-all duration-300">Equipo</a>
+                <a href="#services" class="block py-2 px-4 text-prisma-power hover:bg-prisma-dark hover:text-prisma-energy transition-all duration-300">Servicios</a>
+                <a href="#success-cases" class="block py-2 px-4 text-prisma-power hover:bg-prisma-dark hover:text-prisma-energy transition-all duration-300">Casos de Éxito</a>
+                <a href="#contact" class="block py-2 px-4 text-prisma-power hover:bg-prisma-dark hover:text-prisma-energy transition-all duration-300">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center pt-20 relative">
+        <!-- Capa de imagen de fondo -->
+        <div class="absolute inset-0 z-0">
+            <img src="./images/imagen_edem.jpg" alt="Fondo Prisma Consulting" class="w-full h-full object-cover">
+            <!-- Overlay oscuro para mejorar la legibilidad -->
+            <div class="absolute inset-0 bg-prisma-power bg-opacity-70"></div>
+        </div>
+        <!-- Contenido -->
+        <div class="container mx-auto px-6 text-center text-prisma-energy relative z-10">
+            <h1 class="text-4xl md:text-6xl font-display font-bold mb-6">
+                Multiplicamos tu visión,<br>
+                potenciamos tus resultados
+            </h1>
+            <p class="text-xl mb-8 text-white opacity-90">Transformamos ideas en éxitos empresariales</p>
+            <a href="#contact" class="btn-primary text-white">Contáctanos</a>
+        </div>
+    </section>
+
+    <!-- Quiénes Somos -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Quiénes Somos</h2>
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-lg mb-8">
+                    En Prisma Consulting, nos dedicamos a potenciar el crecimiento de las empresas a través de soluciones estratégicas y personalizadas. Nuestro enfoque se basa en la innovación, la excelencia y el compromiso con los resultados de nuestros clientes.
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div class="card">
+                        <i class="fas fa-bolt text-prisma-power text-3xl mb-4"></i>
+                        <h3 class="font-bold">Energía</h3>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-sun text-prisma-gold text-3xl mb-4"></i>
+                        <h3 class="font-bold">Optimismo</h3>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-crown text-prisma-navy text-3xl mb-4"></i>
+                        <h3 class="font-bold">Elegancia</h3>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-fist-raised text-prisma-gray text-3xl mb-4"></i>
+                        <h3 class="font-bold">Poder</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuestro Equipo -->
+    <section id="team" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Nuestro Equipo</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                <div class="card text-center">
+                    <div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden">
+                        <img src="./images/juan.jpeg" alt="Juan" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Juan</h3>
+                    <p class="text-prisma-power">CEO</p>
+                </div>
+                <div class="card text-center">
+                    <div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden">
+                        <img src="./images/alba.jpeg" alt="Alba" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Alba</h3>
+                    <p class="text-prisma-power">Ventas</p>
+                </div>
+                <div class="card text-center">
+                    <div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden">
+                        <img src="./images/luna.jpeg" alt="Luna" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Luna</h3>
+                    <p class="text-prisma-power">Finanzas</p>
+                </div>
+                <div class="card text-center">
+                    <div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden">
+                        <img src="./images/javier.jpeg" alt="Javier" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Javier</h3>
+                    <p class="text-prisma-power">Sistemas</p>
+                </div>
+                <div class="card text-center">
+                    <div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden">
+                        <img src="./images/pedro.jpeg" alt="Pedro" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Pedro</h3>
+                    <p class="text-prisma-power">Estrategias</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card">
+                    <i class="fas fa-chart-line text-prisma-power text-3xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-4">Consultoría Estratégica</h3>
+                    <p>Desarrollamos estrategias personalizadas para impulsar el crecimiento de tu negocio.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-cogs text-prisma-power text-3xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-4">Optimización de Procesos</h3>
+                    <p>Mejoramos la eficiencia operativa de tu empresa mediante la optimización de procesos.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-users text-prisma-power text-3xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-4">Gestión del Talento</h3>
+                    <p>Potenciamos el capital humano de tu organización para maximizar resultados.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-laptop-code text-prisma-power text-3xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-4">Transformación Digital</h3>
+                    <p>Guiamos tu empresa hacia la era digital con soluciones tecnológicas innovadoras.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Casos de Éxito -->
+    <section id="success-cases" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Casos de Éxito</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Caso 1 -->
+                <div class="card hover:scale-105 transition-transform duration-300">
+                    <div class="h-48 bg-gradient-to-br from-prisma-power to-prisma-dark rounded-t-xl flex items-center justify-center">
+                        <i class="fas fa-building text-prisma-energy text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Empresa Tecnológica</h3>
+                        <p class="text-gray-600 mb-4">Incremento del 150% en eficiencia operativa mediante la implementación de procesos automatizados y transformación digital.</p>
+                        <div class="flex items-center text-prisma-power">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            <span class="font-semibold">Resultado: 6 meses</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Caso 2 -->
+                <div class="card hover:scale-105 transition-transform duration-300">
+                    <div class="h-48 bg-gradient-to-br from-prisma-energy to-prisma-light rounded-t-xl flex items-center justify-center">
+                        <i class="fas fa-store text-prisma-energy text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Cadena Minorista</h3>
+                        <p class="text-gray-600 mb-4">Optimización de la cadena de suministro resultando en una reducción del 30% en costos operativos y mejora del servicio al cliente.</p>
+                        <div class="flex items-center text-prisma-power">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            <span class="font-semibold">Resultado: 12 meses</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Caso 3 -->
+                <div class="card hover:scale-105 transition-transform duration-300">
+                    <div class="h-48 bg-gradient-to-br from-prisma-energy to-prisma-power rounded-t-xl flex items-center justify-center">
+                        <i class="fas fa-industry text-prisma-energy text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Industria Manufacturera</h3>
+                        <p class="text-gray-600 mb-4">Implementación de sistema de gestión del talento que resultó en una mejora del 40% en la retención de empleados.</p>
+                        <div class="flex items-center text-prisma-power">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            <span class="font-semibold">Resultado: 9 meses</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Contacto</h2>
+            <div class="max-w-2xl mx-auto">
+                <form id="contact-form" class="space-y-6" onsubmit="sendEmail(event)">
+                    <div>
+                        <label for="name" class="block text-sm font-medium mb-2">Nombre</label>
+                        <input type="text" id="name" name="name" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-prisma-power focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-prisma-power focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium mb-2">Mensaje</label>
+                        <textarea id="message" name="message" rows="4" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-prisma-power focus:border-transparent"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full text-white">Enviar Mensaje</button>
+                </form>
+                <div class="mt-8 text-center">
+                    <p class="mb-4">Síguenos en LinkedIn:</p>
+                    <a href="https://www.linkedin.com/company/prisma-consultingvalencia" target="_blank" rel="noopener noreferrer"
+                        class="inline-block text-prisma-navy hover:text-prisma-dark transition-colors">
+                        <i class="fa-brands fa-linkedin text-4xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-prisma-power text-prisma-energy py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Prisma Consulting. Todos los derechos reservados.</p>
+            <div class="mt-4 space-x-4">
+                <a href="https://www.linkedin.com/company/prisma-consultingvalencia/?viewAsMember=true" target="_blank" rel="noopener noreferrer"
+                    class="text-prisma-energy hover:text-prisma-dark transition-colors">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

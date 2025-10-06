@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-prisma-power;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-prisma-dark text-prisma-energy px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-prisma-dark transition-all duration-300;
+  }
+  
+  .section-title {
+    @apply text-4xl md:text-5xl font-display font-bold mb-8 text-center;
+  }
+  
+  .card {
+    @apply bg-prisma-light p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300;
+  }
+}

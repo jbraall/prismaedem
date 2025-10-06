@@ -1,0 +1,14 @@
+{
+  "name": "prisma-consulting-web",
+  "version": "1.0.0",
+  "description": "Sitio web corporativo de Prisma Consulting",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32"
+  }
+}
