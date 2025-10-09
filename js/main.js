@@ -15,19 +15,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Formulario de contacto
-    function sendEmail(e) {
+    const contactForm = document.getElementById('contact-form');
+    contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
         const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
         const message = document.getElementById('message').value;
         
-        const mailtoLink = `mailto:jabral@edem.es?subject=Contacto desde Web Prisma - ${name}&body=Nombre: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMensaje:%0D%0A${message}`;
+        const mailtoLink = `mailto:jabral@edem.es?subject=Contacto desde Web Prisma - ${name}&body=${message}%0D%0A%0D%0A${name}-${phone}`;
         
         window.location.href = mailtoLink;
         
-        // Opcional: resetear el formulario después de un breve delay
+        // Resetear el formulario después de un breve delay
         setTimeout(() => {
-            document.getElementById('contact-form').reset();
+            contactForm.reset();
         }, 1000);
-    }
+    });
 });
